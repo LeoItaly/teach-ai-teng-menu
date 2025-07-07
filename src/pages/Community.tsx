@@ -141,7 +141,7 @@ const Community = () => {
             <div className="flex items-center gap-4">
               <Button variant="outline" size="sm" onClick={() => navigate('/dashboard')}>
                 <ArrowLeft className="w-4 h-4 mr-2" />
-                Back to Menu
+                Back to Dashboard
               </Button>
               <div>
                 <h1 className="text-2xl font-bold text-foreground">Teacher Community</h1>

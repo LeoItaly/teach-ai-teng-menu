@@ -163,7 +163,7 @@ const WorkflowDetail = () => {
             <div className="flex items-center gap-4">
               <Button variant="outline" size="sm" onClick={() => navigate('/dashboard')}>
                 <ArrowLeft className="w-4 h-4 mr-2" />
-                Back to Menu
+                Back to Dashboard
               </Button>
               <div className="flex items-center gap-3">
                 <span className="text-2xl">{workflow.icon}</span>
@@ -265,7 +265,7 @@ const WorkflowDetail = () => {
                   Run Again
                 </Button>
                 <Button variant="outline" onClick={() => navigate('/dashboard')}>
-                  Back to Menu
+                  Back to Dashboard
                 </Button>
               </div>
             </CardContent>

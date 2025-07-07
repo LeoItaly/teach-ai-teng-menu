@@ -27,7 +27,7 @@ const Index = () => {
             </h1>
             <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
               Your personalized AI teaching assistant, designed specifically for middle school educators. 
-              Experience the power of AI through our intuitive, menu-inspired interface.
+              Experience the power of AI through our intuitive, organized interface.
             </p>
             
             <div className="flex items-center justify-center gap-8 text-sm text-muted-foreground mb-12">
@@ -64,9 +64,9 @@ const Index = () => {
             <Card className="shadow-card hover:shadow-elegant transition-shadow duration-300">
               <CardHeader>
                 <div className="text-3xl mb-2">🥢</div>
-                <CardTitle>Menu-Style Experience</CardTitle>
+                <CardTitle>Organized Experience</CardTitle>
                 <CardDescription>
-                  Just like your favorite restaurant, browse organized tool categories designed for easy discovery
+                  Browse organized tool categories designed for easy discovery and seamless workflow
                 </CardDescription>
               </CardHeader>
             </Card>

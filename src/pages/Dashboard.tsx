@@ -283,9 +283,9 @@ const Dashboard = () => {
             <div className="absolute inset-0 flex items-center">
               <div className="container mx-auto px-6">
                 <div className="max-w-xl text-white">
-                  <h2 className="text-3xl font-bold mb-3">Your Teaching Menu</h2>
+                  <h2 className="text-3xl font-bold mb-3">Your Teaching Toolkit</h2>
                   <p className="text-lg opacity-90 mb-4">
-                    Like a great restaurant menu, we've organized our tools by what works best for teachers like you.
+                    We've organized our AI tools into clear categories to help you find exactly what you need.
                   </p>
                   <div className="flex items-center gap-6 text-sm">
                     <div className="flex items-center gap-2">
@@ -340,7 +340,7 @@ const Dashboard = () => {
           </div>
         </div>
 
-        {/* Main Menu Sections */}
+        {/* Main Toolkit Sections */}
         <div className="space-y-12">
           {/* For Beginners */}
           <section>
@@ -360,7 +360,7 @@ const Dashboard = () => {
           <section>
             <div className="flex items-center justify-between mb-6">
               <div>
-                <h2 className="text-2xl font-bold text-foreground mb-2">⭐ Chef's Recommendations</h2>
+                <h2 className="text-2xl font-bold text-foreground mb-2">⭐ AI Recommendations</h2>
                 <p className="text-muted-foreground">AI-optimized workflows based on your preferences</p>
               </div>
               <Badge className="bg-gradient-primary text-sm">Personalized for you</Badge>
@@ -374,7 +374,7 @@ const Dashboard = () => {
           <section>
             <div className="flex items-center justify-between mb-6">
               <div>
-                <h2 className="text-2xl font-bold text-foreground mb-2">📚 Subject Set Menus</h2>
+                <h2 className="text-2xl font-bold text-foreground mb-2">📚 Subject Toolkits</h2>
                 <p className="text-muted-foreground">Complete tool collections for specific subjects</p>
               </div>
               <Badge variant="outline" className="text-sm">All-in-one solutions</Badge>
