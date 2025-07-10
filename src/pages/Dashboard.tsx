@@ -340,6 +340,46 @@ const Dashboard = () => {
           </div>
         </div>
 
+        {/* Recent Activity */}
+        <section className="mb-12">
+          <div className="flex items-center gap-3 mb-6">
+            <Clock className="w-6 h-6 text-primary" />
+            <h2 className="text-2xl font-bold text-foreground">Recent Activity</h2>
+            <Badge variant="outline" className="text-sm">Your latest tool usage and results</Badge>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <Card className="shadow-card hover:shadow-elegant transition-shadow duration-300">
+              <CardHeader>
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-3">
+                    <div className="text-2xl">📝</div>
+                    <div>
+                      <CardTitle className="text-lg">Quiz Generator</CardTitle>
+                      <CardDescription>Created 3 quizzes</CardDescription>
+                    </div>
+                  </div>
+                  <span className="text-sm text-muted-foreground">2 hours ago</span>
+                </div>
+              </CardHeader>
+            </Card>
+            
+            <Card className="shadow-card hover:shadow-elegant transition-shadow duration-300">
+              <CardHeader>
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-3">
+                    <div className="text-2xl">📋</div>
+                    <div>
+                      <CardTitle className="text-lg">Lesson Planner</CardTitle>
+                      <CardDescription>Planned week's lessons</CardDescription>
+                    </div>
+                  </div>
+                  <span className="text-sm text-muted-foreground">Yesterday</span>
+                </div>
+              </CardHeader>
+            </Card>
+          </div>
+        </section>
+
         {/* Main Toolkit Sections */}
         <div className="space-y-12">
           {/* For Beginners */}
@@ -400,33 +440,6 @@ const Dashboard = () => {
             </div>
           </section>
 
-          {/* Recent Activity */}
-          <section>
-            <Card>
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2">
-                  <Clock className="w-5 h-5 text-primary" />
-                  Recent Activity
-                </CardTitle>
-                <CardDescription>Your latest tool usage and results</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-4">
-                  {recentActivity.map((activity, index) => (
-                    <div key={index} className="flex items-center justify-between p-4 bg-muted rounded-lg">
-                      <div>
-                        <p className="font-medium text-foreground">{activity.tool}</p>
-                        <p className="text-sm text-muted-foreground">{activity.result}</p>
-                      </div>
-                      <div className="text-sm text-muted-foreground">
-                        {activity.time}
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </CardContent>
-            </Card>
-          </section>
         </div>
       </div>
     </div>
