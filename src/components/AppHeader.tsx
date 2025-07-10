@@ -8,7 +8,7 @@ export function AppHeader() {
   const [searchQuery, setSearchQuery] = useState("");
 
   return (
-    <header className="h-16 border-b flex items-center justify-between px-4" style={{ backgroundColor: '#c89978' }}>
+    <header className="h-16 bg-background border-b flex items-center justify-between px-4">
       <div className="flex items-center gap-4">
         <SidebarTrigger />
         
@@ -20,8 +20,8 @@ export function AppHeader() {
             className="w-8 h-8"
           />
           <div>
-            <h1 className="text-lg font-semibold text-white">Good morning, leo! 🌅</h1>
-            <p className="text-sm text-white/80">Ready to make teaching easier today?</p>
+            <h1 className="text-lg font-semibold text-foreground">Good morning, leo! 🌅</h1>
+            <p className="text-sm text-muted-foreground">Ready to make teaching easier today?</p>
           </div>
         </div>
       </div>
@@ -29,7 +29,7 @@ export function AppHeader() {
       {/* Search Bar */}
       <div className="flex-1 max-w-md mx-8">
         <div className="relative">
-          <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-500" />
+          <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-muted-foreground" />
           <Input
             placeholder="Search tools..."
             value={searchQuery}
@@ -41,11 +41,11 @@ export function AppHeader() {
 
       {/* Header Actions */}
       <div className="flex items-center gap-2">
-        <Button variant="ghost" size="sm" className="gap-2 text-white hover:bg-white/20">
+        <Button variant="ghost" size="sm" className="gap-2">
           <MessageSquare className="w-4 h-4" />
           Community
         </Button>
-        <Button variant="outline" size="sm" className="gap-2 border-white text-white hover:bg-white hover:text-black">
+        <Button variant="outline" size="sm" className="gap-2">
           <Settings className="w-4 h-4" />
           Preferences
         </Button>

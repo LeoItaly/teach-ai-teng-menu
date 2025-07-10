@@ -179,7 +179,7 @@ const Dashboard = () => {
       key={workflow.id}
       className={`cursor-pointer transition-all duration-200 hover:shadow-elegant hover:-translate-y-1 ${
         isLarge ? 'md:col-span-2' : ''
-      } ${workflow.isRecommended ? 'ring-2 ring-primary' : ''}`}
+      } ${workflow.isRecommended ? 'ring-2 ring-primary animate-glow-pulse' : ''}`}
       onClick={() => handleWorkflowClick(workflow.id)}
     >
       <CardHeader className="pb-3">

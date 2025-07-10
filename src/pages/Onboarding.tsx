@@ -75,13 +75,6 @@ const Onboarding = () => {
                 </div>
               </div>
               
-              <div className="flex justify-center mb-6">
-                <img 
-                  src="/lovable-uploads/ea8a6dcd-76b2-4bb0-9218-b996246be0b8.png" 
-                  alt="GoodClass.ai" 
-                  className="w-16 h-16"
-                />
-              </div>
               <h1 className="text-4xl font-bold text-foreground mb-4">
                 Welcome to Your AI Teaching Assistant
               </h1>
