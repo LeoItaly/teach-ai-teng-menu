@@ -56,7 +56,7 @@ export function Chatbot() {
       {/* Chatbot Toggle Button */}
       <Button
         onClick={() => setIsOpen(!isOpen)}
-        className="fixed bottom-6 left-6 w-14 h-14 rounded-full shadow-lg bg-primary hover:bg-primary/90 z-50"
+        className="fixed bottom-6 left-80 w-14 h-14 rounded-full shadow-lg bg-primary hover:bg-primary/90 z-50"
         size="icon"
       >
         {isOpen ? (
@@ -68,7 +68,7 @@ export function Chatbot() {
 
       {/* Chatbot Window */}
       {isOpen && (
-        <Card className="fixed bottom-24 left-6 w-80 h-96 shadow-2xl z-40 bg-background border">
+        <Card className="fixed bottom-24 left-80 w-80 h-96 shadow-2xl z-40 bg-background border">
           <CardHeader className="pb-3">
             <CardTitle className="text-lg flex items-center gap-2">
               <MessageCircle className="w-5 h-5" />
